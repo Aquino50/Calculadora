@@ -1,0 +1,59 @@
+<div class="container mt-5">
+  <div class="row d-flex text-center">
+    <div class="col col col-md-12 col-lg-12 col-sm-12">
+      <div class="text-center">
+        <h1>{{titulo}}</h1>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-5">
+  <div class="row d-flex text-center">
+    <div class="col col-md-12 col-lg-12 col-sm-12">
+      <br>
+      <form>
+        <div class="form-group">
+          <label>operando A</label>
+          <input type="number" class="form-control" placeholder="Escribe operando A" [(ngModel)]="operandoA"
+            name="operandoA" />
+        </div>
+        <br>
+
+        <div class="form-group">
+          <label>operando B</label>
+          <input type="number" class="form-control" placeholder="Escribe operando B" [(ngModel)]="operandoB"
+            name="operandoB" />
+        </div>
+        <br>
+
+        <div>
+          <button type="submit" class="btn btn-primary" (click)="onSumar()">
+            sumar
+          </button>
+          <div class="space">
+          </div>
+
+          <button type="button" class="btn btn-primary" (click)="onRestar()">
+            restar
+          </button>
+          <div class="space">
+          </div>
+
+          <button type="button" class="btn btn-primary" (click)="onMultiplicar()">
+            multiplicar
+          </button>
+        </div>
+
+      </form>
+      <br>
+
+      <p>Resultado: {{resultado}}</p>
+
+    </div>
+  </div>
+</div>
+
